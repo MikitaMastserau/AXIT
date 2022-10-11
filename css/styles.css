@@ -15,25 +15,26 @@ body {
 
 .header__menu {
     margin-right: 170px;
+    display: flex;
 }
 
-.header__menu__btn {
-    background: #000000;
-    width: 114px;
-    padding: 26px 0;
-}
-
-.header__menu__btn a {
-    font-family: 'Open Sans';
+a {
     text-decoration: none;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header__menu__link {
+    width: 114px;
+    padding: 28px 0;
     font-size: 14px;
     line-height: 19px;
-    font-weight: 600;
-    color: #FFFFFF;
 }
 
 .main {
-    background: url(../img/main_background.jpg) rgba(0, 0, 0, 0.5) no-repeat center top / cover;
+    background: url(../img/main_background.jpg) rgba(0, 0, 0, 0.5) no-repeat center bottom / cover;
     background-blend-mode: multiply;
     color: #FFFFFF;
 }
@@ -71,27 +72,18 @@ span {
 .main__slogan {
     font-size: 18px;
     line-height: 21px;
-    margin-top: 42px;
+    margin: 42px 0 42px;
 }
 
-.main__btn {
+.download {
     width: 270px;
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 2px solid #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
-    padding: 15.5px 0;
-    margin-top: 42px;
-}
-
-.main__btn a {
-    text-decoration: none;
-    font-family: 'Open Sans';
-    font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    padding: 15.5px 0;
 }
 
 .main__form {
@@ -128,14 +120,8 @@ span {
 .social__networks {
     display: flex;
     gap: 30px;
-}
-
-.social__networks__icon {
-    border: none;
-    background: none;
-    padding: 0;
     height: 70px;
-    width: 70px;
+    /* без этого высота 78 почему-то, хотя высота картинки 70 */
 }
 
 .hat {
@@ -324,33 +310,18 @@ span {
     padding-bottom: 50px;
 }
 
-.banner__hat__line {
+.hat_white hr {
     border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
 }
 
-.banner__hat__slogan {
+.hat_white p {
     color: #FFFFFF;
 }
 
-.banner__btn {
+.download_banner {
     width: 370px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #FFFFFF;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 15.5px 0;
     margin: 73px auto 0;
-}
-
-.banner__btn a {
-    text-decoration: none;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
 }
 
 .contact__form {
@@ -368,7 +339,7 @@ span {
     padding: 35px 0 27px 0;
 }
 
-.footer p:only-of-type {
+.footer p {
     font-size: 18px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.5);    
@@ -378,12 +349,4 @@ span {
 .footer__networks {
     display: flex;
     gap: 32.8px;
-}
-
-.footer__networks__icon {
-    border: none;
-    background: none;
-    padding: 0;
-    height: 53.2px;
-    width: 53.2px;
 }
