@@ -4,7 +4,7 @@
   <title>HW8</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -37,7 +37,13 @@
         </p>
         <a class="download" href="#">Download</a>
       </div>
-      <div class="main__form"></div>
+      <form class="main__form">
+        <p>Try Your <em>FREE</em> Trial Today</p>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Get Started">
+      </form>
     </div>
     
   </main>
@@ -259,12 +265,26 @@
   </section>
 
   <section class="contact">
-    <div class="hat">
-      <h2 class="hat__title">CONTACT US</h2>
-      <hr class="hat__line" />
-      <p class="hat__slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="container">
+      <div class="hat">
+        <h2 class="hat__title">CONTACT US</h2>
+        <hr class="hat__line" />
+        <p class="hat__slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <form class="contact__form">
+        <fieldset>
+          <div class="contact__form__left">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="contact__form__right">
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+        </fieldset>
+        <input type="submit" value="Send Message">
+      </form>
     </div>
-    <div class="contact__form"></div>
   </section>
 
   <footer class="footer">
