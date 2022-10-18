@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -81,7 +82,7 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 207px 0 185px 0;
+    padding: 207px 15px 185px 15px;
 }
 
 .main__desktop h1 {
@@ -192,7 +193,7 @@ input::placeholder {
     background-color: #F8EFEF;
 }
 
-.container__social {
+.social .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
