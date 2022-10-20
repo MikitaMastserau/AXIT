@@ -13,11 +13,11 @@
     <div class="container">
       <img class="header__logo" src="img/header_logo.svg" alt="header logo" />
       <nav class="header__menu">
-        <a class="header__menu__link" href="#">Features</a>
-        <a class="header__menu__link" href="#">About</a>
-        <a class="header__menu__link" href="#">Pricing</a>
-        <a class="header__menu__link" href="#">Reviews</a>
-        <a class="header__menu__link" href="#">Contact</a>
+        <a class="header__menu__link" href="#features">Features</a>
+        <a class="header__menu__link" href="#about">About</a>
+        <a class="header__menu__link" href="#pricing">Pricing</a>
+        <a class="header__menu__link" href="#reviews">Reviews</a>
+        <a class="header__menu__link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -59,13 +59,13 @@
     </div>
   </section>
 
-  <section class="tabs">
+  <section class="tabs" id="features">
     <div class="container">
 
     </div>
   </section>
 
-  <section class="awesome">
+  <section class="awesome"  id="about">
     <div class="container">    
       <div class="hat">
         <h2 class="hat__title">WHY THIS IS AWESOME</h2>
@@ -92,7 +92,7 @@
     </div>
   </section>
   
-  <section class="options">
+  <section class="options" id="pricing">
     <div class="container">
       <div class="hat">
         <h2 class="hat__title">PRICING OPTIONS</h2>
@@ -143,7 +143,7 @@
     </div>
   </section>
 
-  <section class="customers">
+  <section class="customers" id="reviews">
     <div class="container">
       <div class="hat">
         <h2 class="hat__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
@@ -194,7 +194,7 @@
     <a class="download download_banner" href="#">Download</a>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="hat">
         <h2 class="hat__title">CONTACT US</h2>
@@ -202,32 +202,32 @@
         <p class="hat__slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <form class="contact__form">
-        <fieldset>
-          <div class="contact__form__left">
+        <div class="contact__form__field">
+          <div>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
           </div>
-          <div class="contact__form__right">
-            <textarea placeholder="Message"></textarea>
-          </div>
-        </fieldset>
+          <textarea placeholder="Message"></textarea>
+        </div>
         <input type="submit" value="Send Message" />
       </form>
     </div>
   </section>
 
   <footer class="footer">
-    <nav class="footer__networks">
-      <a href="#"><img src="img/facebook_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/twitter_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/linkedin_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/pinterest_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/instagram_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/github_icon_footer.svg" alt="icon" /></a>
-      <a href="#"><img src="img/rss_icon_footer.svg" alt="icon" /></a>
-    </nav>
-    <p>© <time>2015</time> Axure Themes</p>
+    <div class="container">
+      <nav class="footer__networks">
+        <a href="#"><img src="img/facebook_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/twitter_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/linkedin_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/pinterest_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/instagram_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/github_icon_footer.svg" alt="icon" /></a>
+        <a href="#"><img src="img/rss_icon_footer.svg" alt="icon" /></a>
+      </nav>
+      <p>© 2015 Axure Themes</p>
+    </div>
   </footer>
 
 </body>
