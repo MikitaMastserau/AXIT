@@ -219,6 +219,104 @@ form > input[type="submit"]:active {
     /* без этого высота 78 почему-то, хотя высота картинки 70 */
 }
 
+.tabs .container {
+    display: flex;
+    position: relative;
+}
+
+input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+label {
+    width: 184px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10.5px 0 10.5px 0;
+    margin: 99px 0 500px 0;
+    z-index: 2;
+}
+
+#tab1:checked ~ label:first-of-type {
+    width: 203px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#tab2:checked ~ label:nth-of-type(2) {
+    width: 203px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 3px solid #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#tab3:checked ~ label:last-of-type {
+    width: 203px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tabs__content {
+    border: 1px solid #C6CBCD;
+    display: none;
+    padding-left: 100px;
+    position: absolute;
+    left: 15px;
+    top: 141px;
+    z-index: 1;
+}
+
+#tab1:checked ~ .tabs__content_1 {
+    display: flex;
+}
+
+#tab2:checked ~ .tabs__content_2 {
+    display: flex;
+}
+
+#tab3:checked ~ .tabs__content_3 {
+    display: flex;
+}
+
+.tabs__content p:first-of-type {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    padding: 41.5px 0 41.5px;
+}
+
+.tabs__content p:last-of-type {
+    width: 570px;
+    margin: 27px 30px 27px 0;
+}
+
+.tabs__content .download {
+    background: #EC7979;
+    border: #EC7979;
+}
+
+.tabs__content .download:hover {
+    background: #AB4949;
+    border: #AB4949;
+    color: #ffffff;
+}
+
+.tabs__content .download:active {
+    background: #EC7979;
+    border: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 .hat {
     display: flex;
     flex-direction: column;
@@ -247,7 +345,7 @@ form > input[type="submit"]:active {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 30px;
+    column-gap: 30px; 
     margin-top: 110px;
 }
 
@@ -261,7 +359,7 @@ form > input[type="submit"]:active {
     font-size: 24px;
     line-height: 32px;
     padding: 34px 0 34px 0;
-    margin-top: 39px 0 8px 0;
+    margin: 39px 0 8px 0;
 }
 
 .awesome__reasons p:nth-of-type(2) {
@@ -378,7 +476,7 @@ form > input[type="submit"]:active {
     padding: 10.5px 0 10.5px 0;
     margin-bottom: 15px;
 }
-
+ 
 .banner {
     background: url(../img/banner_background.jpg) rgba(0, 0, 0, 0.5) no-repeat center top / cover;
     background-blend-mode: multiply;
