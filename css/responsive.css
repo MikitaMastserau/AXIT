@@ -321,6 +321,7 @@
 
     .tabs__content {
         padding-left: 30px;
+        right: 15px;
     }
 
     .tabs__content p:first-of-type {

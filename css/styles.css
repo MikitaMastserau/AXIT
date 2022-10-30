@@ -409,26 +409,26 @@ label {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    padding: 11.5px 0;
+    padding: 12.5px 0;
 }
 
 .options__offers__price p:nth-of-type(2) {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    padding: 27px 0;
+    padding: 28px 0;
 }
 
 .options__offers__price p:nth-of-type(3) {
     color: rgba(255, 255, 255, 0.5);
-    padding: 14.5px 0;
+    padding: 13.5px 0;
 }
 
 .options__offers__price ul li {
     color: #86878B;
     background-color: #FFFFFF;
     border: 1px solid #F5F5F5;
-    padding: 14.5px 0;
+    padding: 13.5px 0;
 }
 
 .customers__reviews {
