@@ -55,7 +55,7 @@ input::placeholder, textarea::placeholder {
     margin-left: -55px;
 }
 
-.container > .header__menu {
+.header__menu {
     display: flex;
 }
 
@@ -76,11 +76,7 @@ input::placeholder, textarea::placeholder {
     text-transform: uppercase;
 }
 
-.header__burger {
-    display: none;
-}
-
-.header__burger > .header__menu {
+#burger, [for=burger] {
     display: none;
 }
 
