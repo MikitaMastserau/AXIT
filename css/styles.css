@@ -30,7 +30,8 @@ a {
     text-transform: capitalize;
 }
 
-input, textarea {
+input,
+textarea {
     resize: none;
     font-size: 14px;
     line-height: 19px;
@@ -38,7 +39,8 @@ input, textarea {
     border-bottom: 1px solid #BDBDBD;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #BDBDBD;
 }
 
@@ -76,7 +78,8 @@ input::placeholder, textarea::placeholder {
     text-transform: uppercase;
 }
 
-#burger, [for=burger] {
+#burger,
+[for=burger] {
     display: none;
 }
 
@@ -122,7 +125,7 @@ input::placeholder, textarea::placeholder {
 
 .download:hover {
     color: #EC7979;
-    border: 2px solid #EC7979;    
+    border: 2px solid #EC7979;
 }
 
 .download:active {
@@ -163,7 +166,7 @@ input::placeholder, textarea::placeholder {
     margin-bottom: 20px;
 }
 
-form > input[type="submit"] {
+form>input[type="submit"] {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -172,11 +175,11 @@ form > input[type="submit"] {
     color: #FFFFFF;
 }
 
-form > input[type="submit"]:hover {
+form>input[type="submit"]:hover {
     background-color: #AB4949;
 }
 
-form > input[type="submit"]:active {
+form>input[type="submit"]:active {
     background-color: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
@@ -221,7 +224,6 @@ form > input[type="submit"]:active {
     align-items: center;
     column-gap: 30px;
     height: 70px;
-    /* без этого высота 78 почему-то, хотя высота картинки 70 */
 }
 
 .tabs .container {
@@ -249,24 +251,24 @@ label {
     z-index: 2;
 }
 
-#tab1:checked ~ label:first-of-type {
-    width: 203px;
-    border: 1px solid #C6CBCD;
-    border-bottom: 2px solid #fff;
-    border-radius: 5px 5px 0px 0px;
-}
-
-#tab2:checked ~ label:nth-of-type(2) {
+#tab1:checked~label:first-of-type {
     width: 203px;
     border: 1px solid #C6CBCD;
     border-bottom: 3px solid #fff;
     border-radius: 5px 5px 0px 0px;
 }
 
-#tab3:checked ~ label:last-of-type {
+#tab2:checked~label:nth-of-type(2) {
     width: 203px;
     border: 1px solid #C6CBCD;
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#tab3:checked~label:last-of-type {
+    width: 203px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 3px solid #fff;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -280,15 +282,15 @@ label {
     z-index: 1;
 }
 
-#tab1:checked ~ .tabs__content_1 {
+#tab1:checked~.tabs__content_1 {
     display: flex;
 }
 
-#tab2:checked ~ .tabs__content_2 {
+#tab2:checked~.tabs__content_2 {
     display: flex;
 }
 
-#tab3:checked ~ .tabs__content_3 {
+#tab3:checked~.tabs__content_3 {
     display: flex;
 }
 
@@ -350,7 +352,7 @@ label {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 30px; 
+    column-gap: 30px;
     margin-top: 110px;
 }
 
@@ -438,7 +440,7 @@ label {
     flex-grow: 1;
 }
 
-.customers__reviews__comment > p {
+.customers__reviews__comment>p {
     height: 180px;
     color: #86878B;
     background-color: #E2E2E2;
@@ -451,11 +453,11 @@ label {
     position: relative;
 }
 
-.customers__reviews__comment > p::after {
+.customers__reviews__comment>p::after {
     content: "";
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
     position: absolute;
     left: 70px;
     bottom: -20px;
@@ -465,7 +467,7 @@ label {
     display: flex;
 }
 
-.customers__comment__people > img {
+.customers__comment__people>img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -481,7 +483,7 @@ label {
     padding: 10.5px 0;
     margin-bottom: 15px;
 }
- 
+
 .banner {
     background: url(../img/banner_background.jpg) rgba(0, 0, 0, 0.5) no-repeat center top / cover;
     background-blend-mode: multiply;
@@ -513,7 +515,7 @@ label {
     column-gap: 30px;
 }
 
-.contact__form__field > div {
+.contact__form__field>div {
     flex-grow: 1;
 }
 
@@ -531,7 +533,7 @@ label {
     overflow: hidden;
 }
 
-.contact__form > input {
+.contact__form>input {
     width: 370px;
     padding: 19px 0;
     margin-left: 50%;
@@ -565,7 +567,7 @@ label {
     transform: scale(1.2);
     transition: all .2s ease;
 }
- 
+
 .footer__networks a img:active,
 .social__networks a img:active {
     transform: scale(1.1);
