@@ -53,10 +53,6 @@ textarea::placeholder {
     justify-content: space-between;
 }
 
-.header__logo {
-    margin-left: -55px;
-}
-
 .header__menu {
     display: flex;
 }

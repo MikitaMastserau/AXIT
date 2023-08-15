@@ -461,6 +461,7 @@
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
+        position: relative;
     }
 
     h2 {
@@ -481,6 +482,7 @@
         position: absolute;
         left: 0;
         top: 55px;
+        z-index: 1;
     }
 
     .header__menu a {
@@ -648,7 +650,6 @@
     }
 
     .tabs__content {
-        width: 95%;
         text-align: center;
         padding-left: 0;
         top: 83px;
